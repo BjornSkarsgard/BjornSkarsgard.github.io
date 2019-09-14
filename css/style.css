@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
 .header__logo-link::before {
   content: "";
   position: absolute;
-  background: url(../img/logo.png) 50% 50% no-repeat;
+  background: url(../img/logo.webp) 50% 50% no-repeat;
   width: 100px;
   height: 45px;
   background-size: 100px;
@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 
 .header__logo:hover .header__logo-link::before {
   position: absolute;
-  background: url(../img/logo-hover.png) 50% 50% no-repeat;
+  background: url(../img/logo-hover.webp) 50% 50% no-repeat;
   background-size: 100px;
   transition: all 0.2s ease-out; }
 
@@ -262,7 +262,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff, 0 0 20px #94edff; }
 
 .search__button {
-  background: url(../img/search.png) 50% 50% no-repeat;
+  background: url(../img/search.webp) 50% 50% no-repeat;
   border: none;
   width: 30px;
   height: 30px;
@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
   padding: 20px; }
 
 .search__button:hover {
-  background: url(../img/search-focus.png) 50% 50% no-repeat;
+  background: url(../img/search-focus.webp) 50% 50% no-repeat;
   transform: rotate(-90deg);
   transition: transform 0.2s ease-in-out;
   height: 30px;
@@ -356,7 +356,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   flex-direction: column;
-  background: url(../img/background.png);
+  background: url(../img/background.webp);
   margin-top: 50px;
   margin-right: 27px;
   padding: 64px 38px 100px 38px;
@@ -1961,7 +1961,7 @@ circle {
   box-sizing: border-box; }
 
 .about__logo {
-  background: url(../img/logo.png) 50% 50% no-repeat;
+  background: url(../img/logo.webp) 50% 50% no-repeat;
   width: 70px;
   height: 70px;
   background-size: 85px;
