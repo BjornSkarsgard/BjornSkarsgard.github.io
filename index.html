@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SkarsgarDev</title>
-    <link href="css/style.min.css" rel="stylesheet">
     <link rel="SHORTCUT ICON" href="../img/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="slideout" class="slideout">
-        <div id="slideout-box" class="slideout__box">
-            <img id="slideout-open" class="slideout__img slideout__img--open" src="../img/menu-mobile.svg" alt="Навигация по сайту">
-            <img id="slideout-close" class="slideout__img slideout__img--close" src="../img/menu-mobile-close.svg" alt="Навигация по сайту">
-        </div>
-    </div>
+    <!-- летающие частицы -->
     <div class="particles" id="particles-js"></div>
+    <!-- Частицы при клике -->
     <div class="particles-click" id="particles-js-click"></div>
 
-    <!-------------------------------------->
     <div class="wrapper">
         <header class="header">
             <div class="header__block">
@@ -426,9 +422,33 @@
                 </div>
             </div>
         </section>
-
-
+        <section class="header__search header__search--mobile search">
+            <form class="search__form" action="#" method="GET">
+                <input class="search__box" type="search" name="search" id="1" placeholder="Что то потерял? Все найдется!">
+                <input value="" class="search__button" type="submit">
+            </form>
+        </section>
         <section class="categories">
+            <h2 class="categories__title">Навигация</h2>
+            <div class="categories__navigation">
+                <ul>
+                    <li class="categories__nav--main">
+                        <a class="categories__items" href="index.html"><span class="categories__items-span categories__items--main"></span>Главная страница</a>
+                    </li>
+                    <li>
+                        <a class="categories__items" href="#"><span class="categories__items-span categories__items--best"></span>Лучшее</a>
+                    </li>
+                    <li>
+                        <a class="categories__items" href="#"><span class="categories__items-span categories__items--news"></span>Новости</a>
+                    </li>
+                    <li>
+                        <a class="categories__items" href="#"><span class="categories__items-span categories__items--biog"></span>Биография</a>
+                    </li>
+                    <li>
+                        <a class="categories__items" href="#"><span class="categories__items-span categories__items--blog"></span>Блог</a>
+                    </li>
+                </ul>
+            </div>
             <h2 class="categories__title">Категории</h2>
             <div class="categories__navigation">
                 <ul>
@@ -498,18 +518,23 @@
             </ul>
         </section>
     </aside>
+    <div id="slideout" class="slideout">
+        <span class="slideout__burger"></span>
+    </div>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/for-click/for-click.js"></script>
+    <!-- <script src="js/for-click/for-click.js"></script> -->
     <script src="js/slideout/slideout.js"></script>
     <script src="js/particles/particles.js"></script>
     <script src="js/particles/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/slider/slider.js"></script>
-    <script src="js/slider-mobile/slider-mobile.js"></script>
     <script src="js/button/button.js"></script>
     <script src="js/dist/grade.js"></script>
     <script type="text/javascript">
         window.addEventListener('load', function() {
+            /*
+                 Градиент для заливки блоков с изображениями
+              */
             Grade(document.querySelectorAll('.gradient-wrap'))
         })
     </script>
