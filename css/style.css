@@ -2124,6 +2124,9 @@ circle {
   100% {
     background-position: 0% 51%; } }
 
+.social {
+  padding-bottom: 150px; }
+
 .social__title {
   display: inline-block;
   position: relative;
@@ -2272,6 +2275,10 @@ circle {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 51%; } }
+
+@media (min-width: 1300px) {
+  .social {
+    padding: 0; } }
 
 .about {
   position: relative;
