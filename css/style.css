@@ -1612,9 +1612,12 @@ body::-webkit-scrollbar-thumb {
   top: 50px;
   height: 3px;
   background: linear-gradient(47deg, #fd00ff, #0032ff, #00ffa7, #ff00f5);
-  background-size: 600% 600%;
-  -webkit-animation: gradient-anim 10s ease infinite;
-          animation: gradient-anim 10s ease infinite; }
+  background-size: 600% 600%; }
+
+@media (min-width: 1300px) {
+  .paginator::before {
+    -webkit-animation: gradient-anim 10s ease infinite;
+            animation: gradient-anim 10s ease infinite; } }
 
 .paginator__block {
   display: flex;
@@ -1629,10 +1632,13 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: flex-start;
   background-color: #1f2123;
-  -webkit-animation: neon-paginator 3s ease-in-out infinite alternate;
-          animation: neon-paginator 3s ease-in-out infinite alternate;
   box-shadow: 0 0 2px #94edff, 0 0 5px #94edff, 0 0 10px #94edff, inset 0 0 5px #000000, inset 0 0 10px #000000, inset 0 0 15px #000000;
   vertical-align: bottom; }
+
+@media (min-width: 1300px) {
+  .paginator__items {
+    -webkit-animation: neon-paginator 3s ease-in-out infinite alternate;
+            animation: neon-paginator 3s ease-in-out infinite alternate; } }
 
 .paginator__link {
   box-sizing: border-box;
