@@ -12,7 +12,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.sidebar__mobile > .categories > .categories__navigation > ul > .categories__dropdown-items > a').click(function() {
+    $('.sidebar__wrapper > .categories > .categories__navigation > ul > .categories__dropdown-items > a').click(function() {
         $('.categories__dropdown-items ul').slideUp();
         if ($(this).next().is(":visible")) {
             $(this).next().slideUp();
@@ -21,6 +21,8 @@ $(document).ready(function() {
         }
         return false;
     });
+
+
 
     $('.sidebar__pc > .categories > .categories__navigation > ul > li > a').click(function() {
             $('.categories__navigation > ul > li > a, .sidebar__pc > .categories > .categories__navigation > ul > .categories__dropdown-items a').removeClass('active');
@@ -31,13 +33,14 @@ $(document).ready(function() {
             $(this).addClass('active');
         });
 
-    $('.sidebar__mobile > .categories > .categories__navigation > ul > li > a').click(function() {
-            $('.categories__navigation > ul > li > a, .sidebar__mobile > .categories > .categories__navigation > ul > .categories__dropdown-items a').removeClass('active');
+    $('.sidebar__wrapper > .categories > .categories__navigation > ul > li > a').click(function() {
+            $('.categories__navigation > ul > li > a, .sidebar__pc > .categories > .categories__navigation > ul > .categories__dropdown-items a').removeClass('active');
             $(this).addClass('active');
         }),
-        $('.sidebar__mobile > .categories > .categories__navigation > ul > .categories__dropdown-items ul li a').click(function() {
+        $('.sidebar__wrapper > .categories > .categories__navigation > ul > .categories__dropdown-items ul li a').click(function() {
             $('.categories__dropdown-items ul li a').removeClass('active');
             $(this).addClass('active');
         });
+
 
 });
