@@ -1732,7 +1732,9 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0 0 4px #f853fc, 0 0 7px #f853fc, 0 0 15px #f853fc; } }
 
 .statistic {
-  display: none; }
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 25px; }
 
 @media (min-width: 1300px) {
   .statistic {
@@ -2064,7 +2066,8 @@ circle {
     transition: all 0.2s ease-in-out; } }
 
 .categories__items--active {
-  background: #161618; }
+  background: #161618;
+  cursor: default; }
 
 /* активный переключатель */
 .categories__items--drop:before {
